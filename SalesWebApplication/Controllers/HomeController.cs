@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SalesWebApplication.Models;
+using SalesWebApplication.Models.ViewModels;
 using System.Diagnostics;
 
 namespace SalesWebApplication.Controllers
@@ -20,6 +20,8 @@ namespace SalesWebApplication.Controllers
 
         public IActionResult Privacy()
         {
+            ViewData["Description"] = "Made by Igor Adelino";
+
             return View();
         }
 
